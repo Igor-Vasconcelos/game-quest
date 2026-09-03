@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --cor-fundo: #090d16;
+  --cor-navbar-footer: #0d1422;
+  --cor-card: #131b2a;
+  --cor-card-hover: #1c2940;
+
+  --cor-principal: #f59e0b;
+  --cor-principal-hover: #fbbf24;
+  --cor-secundaria: #38bdf8;
+
+  --cor-texto: #f8fafc;
+  --cor-texto-secundario: #a7b0c0;
+  --cor-borda: #28364d;
+
+  --cor-sucesso: #22c55e;
+  --cor-alerta: #ef4444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-fundo);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--cor-texto);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  align-items: center;
+  background-color: var(--cor-navbar-footer);
+}
+
+.logo {
+  color: var(--cor-texto);
+  font-size: xx-large;
+}
+
+.spam-logo {
+  color: var(--cor-principal);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-texto-secundario);
+}
+
+.inicio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+#inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+#banner-inicial {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.rodape {
+  background-color: var(--cor-navbar-footer);
+}
